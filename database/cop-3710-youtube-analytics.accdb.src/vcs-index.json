@@ -1,0 +1,151 @@
+﻿{
+  "Info": {
+    "Class": "clsVCSIndex",
+    "Description": "Version Control System Index"
+  },
+  "Items": {
+    "MergeBuildDate": null,
+    "FullBuildDate": null,
+    "ExportDate": "2026-03-04T01:30:35.000Z",
+    "FullExportDate": "2026-03-03T03:34:36.000Z",
+    "OptionsHash": "e599266",
+    "LastMergedCommit": "",
+    "Components": {
+      "DB Connections": {
+        "db-connection.json": {
+        }
+      },
+      "DB Properties": {
+        "dbs-properties.json": {
+          "FileHash": "1e41b66",
+          "ExportDate": "2026-03-04T01:30:31.000Z",
+          "SourceModified": null,
+          "FilePropertiesHash": "417a5fc"
+        }
+      },
+      "Doc Properties": {
+        "documents.json": {
+          "FileHash": "2a272b0",
+          "ExportDate": "2026-03-04T01:30:31.000Z",
+          "SourceModified": null,
+          "FilePropertiesHash": "0387cf8"
+        }
+      },
+      "Hidden Attributes": {
+        "hidden-attributes.json": {
+        }
+      },
+      "Nav Pane Groups": {
+        "nav-pane-groups.json": {
+          "FileHash": "8b001dd",
+          "ExportDate": "2026-03-04T01:30:31.000Z",
+          "SourceModified": null,
+          "FilePropertiesHash": "b0a3c65"
+        }
+      },
+      "Proj Properties": {
+        "proj-properties.json": {
+        }
+      },
+      "Project": {
+        "project.json": {
+          "FileHash": "9fe41ad",
+          "ExportDate": "2026-03-04T01:30:31.000Z",
+          "SourceModified": null,
+          "FilePropertiesHash": "83735d7"
+        }
+      },
+      "Queries": {
+        "performance.bas": {
+          "FileHash": "91cb1a6",
+          "ExportDate": "2026-03-04T01:30:31.000Z",
+          "SourceModified": null,
+          "FilePropertiesHash": "88f4b9f"
+        }
+      },
+      "Relations": {
+        "fk_category_performance_category.json": {
+          "FileHash": "59e7871",
+          "ExportDate": "2026-03-04T01:30:31.000Z",
+          "SourceModified": null,
+          "FilePropertiesHash": "1267ab0"
+        },
+        "fk_video_category_category.json": {
+          "FileHash": "4bea56d",
+          "ExportDate": "2026-03-04T01:30:31.000Z",
+          "SourceModified": null,
+          "FilePropertiesHash": "45926cc"
+        },
+        "fk_video_category_video.json": {
+          "FileHash": "91eda16",
+          "ExportDate": "2026-03-04T01:30:31.000Z",
+          "SourceModified": null,
+          "FilePropertiesHash": "074676b"
+        },
+        "fk_video_channel.json": {
+          "FileHash": "711a3fb",
+          "ExportDate": "2026-03-04T01:30:31.000Z",
+          "SourceModified": null,
+          "FilePropertiesHash": "44c56e2"
+        }
+      },
+      "Tables": {
+        "category.xml": {
+          "FileHash": "4293de9",
+          "ExportDate": "2026-03-04T01:30:31.000Z",
+          "SourceModified": null,
+          "FilePropertiesHash": "77af26a"
+        },
+        "category_performance.xml": {
+          "FileHash": "ea2c8ae",
+          "ExportDate": "2026-03-04T01:30:31.000Z",
+          "SourceModified": null,
+          "FilePropertiesHash": "e9658d3"
+        },
+        "channel.xml": {
+          "FileHash": "6f7d522",
+          "ExportDate": "2026-03-04T01:30:31.000Z",
+          "SourceModified": null,
+          "FilePropertiesHash": "019722e"
+        },
+        "video.xml": {
+          "FileHash": "5199e95",
+          "ExportDate": "2026-03-04T01:30:31.000Z",
+          "SourceModified": null,
+          "FilePropertiesHash": "8896d97"
+        },
+        "video_category.xml": {
+          "FileHash": "4339fed",
+          "ExportDate": "2026-03-04T01:30:31.000Z",
+          "SourceModified": null,
+          "FilePropertiesHash": "27c18f2"
+        }
+      },
+      "Themes": {
+        "Office Theme.thmx": {
+          "FileHash": "12a14b1",
+          "OtherHash": "8d355d1",
+          "ExportDate": "2026-03-04T01:30:31.000Z",
+          "SourceModified": null,
+          "FilePropertiesHash": "038c0b1"
+        }
+      },
+      "VB Project": {
+        "vbe-project.json": {
+          "FileHash": "36ca23f",
+          "ExportDate": "2026-03-04T01:30:31.000Z",
+          "SourceModified": null,
+          "FilePropertiesHash": "9e00036"
+        }
+      },
+      "VBE References": {
+        "vbe-references.json": {
+          "FileHash": "c8d14f7",
+          "ExportDate": "2026-03-04T01:30:31.000Z",
+          "SourceModified": null,
+          "FilePropertiesHash": "375b5f5"
+        }
+      }
+    }
+  }
+}

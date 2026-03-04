@@ -1,0 +1,14 @@
+﻿{
+  "Info": {
+    "Class": "clsDbDocument",
+    "Description": "Database Documents Properties (DAO)"
+  },
+  "Items": {
+    "Databases": {
+      "SummaryInfo": {
+        "Author": "Sutton Wilterdink",
+        "Title": "cop-3710-youtube-analytics"
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+﻿{
+  "Info": {
+    "Class": "clsDbRelation",
+    "Description": "Database relationship"
+  },
+  "Items": {
+    "Name": "fk_video_channel",
+    "Attributes": 0,
+    "Table": "channel",
+    "ForeignTable": "video",
+    "Fields": [
+      {
+        "Name": "channel_id",
+        "ForeignName": "channel_id"
+      }
+    ]
+  }
+}

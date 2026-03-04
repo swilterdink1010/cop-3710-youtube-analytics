@@ -1,0 +1,18 @@
+﻿{
+  "Info": {
+    "Class": "clsDbRelation",
+    "Description": "Database relationship"
+  },
+  "Items": {
+    "Name": "fk_video_category_video",
+    "Attributes": 0,
+    "Table": "video",
+    "ForeignTable": "video_category",
+    "Fields": [
+      {
+        "Name": "vid_id",
+        "ForeignName": "vid_id"
+      }
+    ]
+  }
+}

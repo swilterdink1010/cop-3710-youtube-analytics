@@ -1,0 +1,18 @@
+﻿{
+  "Info": {
+    "Class": "clsDbRelation",
+    "Description": "Database relationship"
+  },
+  "Items": {
+    "Name": "fk_category_performance_category",
+    "Attributes": 0,
+    "Table": "category",
+    "ForeignTable": "category_performance",
+    "Fields": [
+      {
+        "Name": "category_id",
+        "ForeignName": "category_id"
+      }
+    ]
+  }
+}
