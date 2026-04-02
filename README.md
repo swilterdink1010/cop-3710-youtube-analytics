@@ -5,9 +5,12 @@ to view count and click-through-rate.
 The users of this project, mainly YouTube creators, can use this data
 to adapt their titles and video types to maximize follower gain.
 
-The system will be implemented in Microsoft Access 365 because of its
-ease of use and because of its inbuilt SQL Querying. The biggest 
-tradeoff from using Access compared to other DBMSs is its relatively 
-slow speed in handling large datasets like the ones from Kaggle. 
-However, because this project is not meant for commercial use, it is 
-not a prevalent issue.
+# Final Database Entity Relationship Diagram
+![Database ER Diagram](database_er.png)
+
+# Final Relational Schema
+- Channel (**<u>channel_id</u>**, channel_name, channel_subs, channel_views)
+- Video (**<u>vid_id</u>**, vid_length, vid_title, vid_likes, vid_comments, vid_upload_date, vid_views, vid_ctr, *channel_id*)
+- Category (**<u>category_id</u>**, category_name, category_desc)
+- Video Category (***<u>vid_id</u>***, ***<u>category_id</u>***)
+- Category Performance (***<u>category_id</u>***, performance_ctr, performance_avg_views)
