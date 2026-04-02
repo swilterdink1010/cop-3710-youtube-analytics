@@ -1,4 +1,5 @@
 import oracledb
+import pandas
 import csv
 from dotenv import load_dotenv
 import os
