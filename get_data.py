@@ -18,8 +18,7 @@ def get_data_raw()->pandas.DataFrame:
 
 def main():
     raw_data = get_data_raw()
-    print(raw_data[['title', 'category_id']])
-    print(raw_data.columns)
+    print(raw_data)
     
     
 if __name__ == "__main__":

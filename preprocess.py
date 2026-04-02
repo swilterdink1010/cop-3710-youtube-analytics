@@ -50,13 +50,14 @@ def create_category(raw_data: pandas.DataFrame)->pandas.DataFrame:
 def create_video(raw_data: pandas.DataFrame, channel: pandas.DataFrame)->pandas.DataFrame:
     print("Processing 'VIDEO' table...")
     channel_lookup = channel.set_index('channel_name')['channel_id']
+    print(raw_data['publish_time'].iloc[0])
     video = pandas.DataFrame({
         'vid_id': range(1, len(raw_data) + 1),
         'vid_length': numpy.random.randint(120, 3600, size=len(raw_data)),
         'vid_title': raw_data['title'],
         'vid_likes': raw_data['likes'],
         'vid_comments': raw_data['comment_count'],
-        'vid_upload_date': raw_data['publish_time'],
+        'vid_upload_date': pandas.to_datetime(raw_data['publish_time'], format='ISO8601').dt.strftime('%Y-%m-%d'),
         'vid_views': raw_data['views'],
         'vid_ctr': numpy.random.uniform(0.01, 0.05, size=len(raw_data)),
         'channel_id': raw_data['channel_title'].map(channel_lookup),
@@ -120,12 +121,13 @@ def generate_processed_data()->dict[str, pandas.DataFrame]:
     return processed
     
     
-def export_data(data_packed: dict[str, pandas.DataFrame])->None:
+def export_data(data_packed: dict[str, pandas.DataFrame])->dict[str, pandas.DataFrame]:
     os.makedirs("./data/", exist_ok=True)
     for name, df in data_packed.items():
         print(f"Exporting '{name}.csv'...")
         df.to_csv(f"./data/{name}.csv", index=False)
     print("Exporting complete.")
+    return data_packed
     
 
 def main():
