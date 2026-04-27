@@ -26,9 +26,9 @@ LIB_DIR=
 ```
 2. Run `dataload.py` to populate the Oracle FreeSQL database
 ```shell
-python3 dataload.py
+python3 src\dataload.py
 ```
 3. Run `app.py` to enter the terminal UI
 ```shell
-python3 app.py
+python3 src\app.py
 ```
