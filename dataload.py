@@ -4,6 +4,7 @@ import csv
 from dotenv import load_dotenv
 import os
 import preprocess
+from pathlib import Path
 
 load_dotenv()
 
@@ -19,6 +20,12 @@ def bulk_load_csv(data_packed: dict[str, pandas.DataFrame]):
     try:
         conn = oracledb.connect(user=DB_USER, password=DB_PASS, dsn=DB_DSN)
         cursor = conn.cursor()
+        
+        create_db = Path('create_db.sql').read_text()
+        statements = [s.strip() for s in create_db.split(';') if s.strip()]
+        for s in statements:
+            cursor.execute(s)
+        conn.commit()
         
         tables = list(data_packed.keys())
         
