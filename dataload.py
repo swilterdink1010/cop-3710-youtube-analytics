@@ -21,11 +21,15 @@ def bulk_load_csv(data_packed: dict[str, pandas.DataFrame]):
         conn = oracledb.connect(user=DB_USER, password=DB_PASS, dsn=DB_DSN)
         cursor = conn.cursor()
         
-        create_db = Path('create_db.sql').read_text()
-        statements = [s.strip() for s in create_db.split(';') if s.strip()]
-        for s in statements:
-            cursor.execute(s)
-        conn.commit()
+        try:
+            create_db = Path('create_db.sql').read_text()
+            statements = [s.strip() for s in create_db.split(';') if s.strip()]
+            for s in statements:
+                cursor.execute(s)
+            conn.commit()
+            print("Database initialized.")
+        except:
+            pass
         
         tables = list(data_packed.keys())
         
